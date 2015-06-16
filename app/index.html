@@ -11,6 +11,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
         
     </head>
     <body class="page-header-fixed">
@@ -20,7 +22,7 @@
 
         <!-- Header BEGIN -->
         <header class="page-header">
-            <nav class="navbar  navbar-defaul navbar-fixed-top" role="navigation">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header page-scroll">
@@ -33,24 +35,24 @@
                         </span>
                         </button>
                         <a class="navbar-brand" href="#intro">
-                            <img class="logo-default" src="http://fakeimg.pl/150x50/?text=InCAT.me&font_size=25" alt="Logo">
+                            <img class="logo-default" src="http://fakeimg.pl/150x50/2B3643/fff/?text=InCAT.me&font_size=35" alt="Logo">
                         </a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="page-scroll active">
+                            <li class="page-scroll">
                                 <a href="#intro">Home</a>
                             </li>
                             <li class="page-scroll">
                                 <a href="#about">О нас</a>
                             </li>
                             <li class="page-scroll">
-                                <a href="#team">Команда</a>
+                                <a href="#features">Фичи</a>
                             </li>
                             <li class="page-scroll">
-                                <a href="#features">Фичи</a>
+                                <a href="#team">Команда</a>
                             </li>
                             <li class="page-scroll">
                                 <a href="#contact">Контакты</a>
@@ -67,7 +69,7 @@
                                 <a href="#" class="search">авторизация</a>
                             </li>
                             <li>
-                                <a href="#" class="search"> <i class="glyphicon glyphicon-user"></i></a>
+                               <i class="fa fa-user fa-lg"></i>
                             </li>
                         </ul>
                     </div>
@@ -82,8 +84,304 @@
                 <!--/container-->
             </nav>
         </header>
-
         <!-- Header END -->
+        <!-- BEGIN INTRO SECTION -->
+        <section id="intro">
+            <!-- Slider BEGIN -->
+            <div class="page-slider">
+                <div class="revolution-slider">
+                    <div class="banner">
+                        <img src="http://fakeimg.pl/1920x550/578ebe/fff/?text=title" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <!-- Slider END -->
+        </section>
+        <!-- END INTRO SECTION -->
+        <!-- BEGIN MAIN LAYOUT -->
+        <div class="page-content">
+            <!-- SUBSCRIBE BEGIN -->
+            <div class="subscribe">
+                <div class="container">
+                    <div class="subscribe-wrap">
+                        <form class="form-inline"  action="" method="post" role="form">
+                            <div class="col-sm-10 col-xs-12">
+                                <div class="form-group">
+                                    <input type="name" class="form-control input-lg" id="name" placeholder="Name">
+                                </div>
+                                <div class="form-group border-left-transparent">
+                                    <input type="email" class="form-control input-lg" id="email" placeholder="Your Email">
+                                </div>
+                                <div class="checkbox input-lg">
+                                    <input id="remember" type="checkbox" checked>
+                                    <label for="remember">
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-12">
+                                <div class="form-group pull-right">
+                                    <button type="submit" class="btn-info btn btn-lg btn-block">Signup</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- SUBSCRIBE END -->
+
+            <!-- BEGIN ABOUT SECTION -->
+            <section id="about" class="service-bg">
+                <!-- Services BEGIN -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="services text-center">
+                                <div class="services-wrap">
+                                    <div class="service-body">
+                                        <img src="http://fakeimg.pl/180x180/44b6ae/fff/?text=services" alt="" class="">
+                                    </div>
+                                </div>
+                                <h3>Metronic is time saver</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="services text-center">
+                                <div class="services-wrap">
+                                    <div class="service-body">
+                                        <img src="http://fakeimg.pl/180x180/44b6ae/fff/?text=services" alt="" class="">
+                                    </div>
+                                </div>
+                                <h3>Created for all type Devices</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="services text-center">
+                                <div class="services-wrap">
+                                    <div class="service-body">
+                                        <img src="http://fakeimg.pl/180x180/44b6ae/fff/?text=services" alt="" class="">
+                                    </div>
+                                </div>
+                                <h3>Great individual Design</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services END -->
+            </section>
+            <!-- END ABOUT SECTION -->
+
+            <!-- BEGIN FEATURES SECTION -->
+            <section id="features">
+                <!-- Features BEGIN -->
+                <div class="features-bg">
+                    <div class="container text-center">
+                        <div class="heading">
+                            <h2>Особенности InCAT</h2>
+                        </div><!-- //end heading -->
+
+                        <!-- Features -->
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="features">
+                                    <img src="http://fakeimg.pl/180x180/8775a7/fff/?text=features" alt="" class="">
+                                    <div class="features-in">
+                                        <h3><a href="#">Full sass support</a></h3>
+                                        <p>Lorem niam ipsum dolor sit ammet adipiscing et suitem elit et nonuy nibh elit niam dolor
+                                            Lorem niam ipsum dolor sit ammet adipiscing et suitem elit et nonuy nibh elit niam dolo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="features">
+                                    <img src="http://fakeimg.pl/180x180/8775a7/fff/?text=features" alt="" class="">
+                                    <div class="features-in">
+                                        <h3><a href="#">Awesome design</a></h3>
+                                        <p>Lorem niam ipsum dolor sit ammet adipiscing et suitem elit et nonuy nibh elit niam dolor
+                                            Lorem niam ipsum dolor sit ammet adipiscing et suitem elit et nonuy nibh elit niam dolo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="features">
+                                    <img src="http://fakeimg.pl/180x180/8775a7/fff/?text=features" alt="" class="">
+                                    <div class="features-in">
+                                        <h3><a href="#">Built with bootstrap</a></h3>
+                                        <p>Lorem niam ipsum dolor sit ammet adipiscing et suitem elit et nonuy nibh elit niam dolor
+                                            Lorem niam ipsum dolor sit ammet adipiscing et suitem elit et nonuy nibh elit niam dolo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- //end row -->
+                        <!-- End Features -->
+
+                        <a href="#" class="btn btn-primary btn-lg">Try it for free</a>
+                    </div>
+                </div>
+                <!-- Features END -->
+            </section>
+            <!-- END FEATURES SECTION -->
+
+            <!-- BEGIN TEAM SECTION -->
+            <section id="team">
+                <!-- Team BEGIN -->
+                <div class="team-bg">
+                    <div class="container">
+                        <div class="heading-light text-center">
+                            <h2>Команда</h2>
+                        </div><!-- //end heading -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="team-members clearfix">
+                                    <div class="team-avatar pull-left col-sm-4">
+                                        <img src="http://fakeimg.pl/150x150/dfba49/fff/?text=features" alt="" class="img-responsive img-circle">
+                                    </div>
+                                    <div class="team-desc pull-right col-sm-8">
+                                        <div class="team-details">
+                                            <h4>Alex Atkinson</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Aspernatur commodi debitis delectus magni, quis suscipit.Aspernatur
+                                                commodi debitis delectus magni, quis suscipit. commodi debitis delectus magni, quis suscipit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="team-members clearfix">
+                                    <div class="team-avatar pull-left col-sm-4">
+                                        <img src="http://fakeimg.pl/150x150/dfba49/fff/?text=features" alt="" class="img-responsive img-circle">
+                                    </div>
+                                    <div class="team-desc pull-right col-sm-8">
+                                        <div class="team-details">
+                                            <h4>Alex Atkinson</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Aspernatur commodi debitis delectus magni, quis suscipit.Aspernatur
+                                                commodi debitis delectus magni, quis suscipit. commodi debitis delectus magni, quis suscipit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="team-members clearfix">
+                                    <div class="team-avatar pull-left col-sm-4">
+                                        <img src="http://fakeimg.pl/150x150/dfba49/fff/?text=features" alt="" class="img-responsive img-circle">
+                                    </div>
+                                    <div class="team-desc pull-right col-sm-8">
+                                        <div class="team-details">
+                                            <h4>Alex Atkinson</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Aspernatur commodi debitis delectus magni, quis suscipit.Aspernatur
+                                                commodi debitis delectus magni, quis suscipit. commodi debitis delectus magni, quis suscipit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="team-members clearfix">
+                                    <div class="team-avatar pull-left col-sm-4">
+                                        <img src="http://fakeimg.pl/150x150/dfba49/fff/?text=features" alt="" class="img-responsive img-circle">
+                                    </div>
+                                    <div class="team-desc pull-right col-sm-8">
+                                        <div class="team-details">
+                                            <h4>Alex Atkinson</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Aspernatur commodi debitis delectus magni, quis suscipit.Aspernatur
+                                                commodi debitis delectus magni, quis suscipit. commodi debitis delectus magni, quis suscipit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="team-members clearfix">
+                                    <div class="team-avatar pull-left col-sm-4">
+                                        <img src="http://fakeimg.pl/150x150/dfba49/fff/?text=features" alt="" class="img-responsive img-circle">
+                                    </div>
+                                    <div class="team-desc pull-right col-sm-8">
+                                        <div class="team-details">
+                                            <h4>Alex Atkinson</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Aspernatur commodi debitis delectus magni, quis suscipit.Aspernatur
+                                                commodi debitis delectus magni, quis suscipit. commodi debitis delectus magni, quis suscipit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="team-members clearfix">
+                                    <div class="team-avatar pull-left col-sm-4">
+                                        <img src="http://fakeimg.pl/150x150/dfba49/fff/?text=features" alt="" class="img-responsive img-circle">
+                                    </div>
+                                    <div class="team-desc pull-right col-sm-8">
+                                        <div class="team-details">
+                                            <h4>Alex Atkinson</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Aspernatur commodi debitis delectus magni, quis suscipit.Aspernatur
+                                                commodi debitis delectus magni, quis suscipit. commodi debitis delectus magni, quis suscipit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- //end row -->
+                    </div>
+                </div>
+                <!-- Team END -->
+            </section>
+            <!-- END TEAM SECTION -->
+
+            <!-- BEGIN CONTACT SECTION -->
+            <section id="contact">
+                <div class="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 center-block">
+                                <form class=""  action="" method="post" role="form">
+                                    <div class="form-wrap">
+                                        <div class="form-group col-sm-6">
+                                            <input type="text" placeholder="Имя" class="form-control">
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <input type="text" placeholder="Фамилия" class="form-control">
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <input type="text" placeholder="Почта" class="form-control">
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <input type="text" placeholder="телефон" class="form-control">
+                                        </div>
+                                        <div class="form-group col-sm-12">
+                                            <textarea rows="10" name="message" placeholder="Write comment here ..." class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group col-sm-12 text-center">
+                                            <button type="submit" class="btn-danger btn btn-lg">Send it</button>
+                                        </div>
+                                    </div>
+                                </fotm>
+                            </div>
+                        </div>
+                    </div><!-- //end row -->
+                </div>
+            </section>
+            <!-- BEGIN CONTACT SECTION -->
+
+
+            <!-- Footer -->
+            <footer>
+                <!-- Footer Coypright -->
+                <div class="footer-copyright navbar-inverse">
+                    <div class="container">
+                        <ul class="copyright-socials">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        <P>Designed with love by LoftBlog Team</P>
+                    </div>
+                </div>
+                <!-- End Footer Coypright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+        <!-- END MAIN LAYOUT -->
+        <a href="#intro" class="scroll-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
@@ -91,6 +389,19 @@
         <!-- endbower -->
         <!-- endbuild -->
         <script src="scripts/app.js"></script>
+
+    <script>
+        $(function() {
+            var padding = 83;
+            $('.page-scroll a').on('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - padding
+                }, 1000);
+                event.preventDefault();
+            });
+        });
+    </script>
 
     </body>
 </html>
