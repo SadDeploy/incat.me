@@ -51,13 +51,17 @@ body {
     }
   }
 }
-//mixin
+
+
+//mixins
 @mixin padtopbot($top, $bottom) {
   padding-top: $top;
   padding-bottom: $bottom;
 }
+//mixins
 
-//блоки в lp
+
+//blocks in lp
 .services {
   @include padtopbot($padding-large-vertical * 3, $padding-large-vertical);
 }
@@ -118,7 +122,7 @@ body {
     }
   }
 }
-//блоки в lp
+//blocks in lp
 
 .user_form {
   background: #fff;
@@ -157,9 +161,6 @@ body {
 }
 .checkbox input[type=checkbox]:checked + label:after {
   content: "\f046";
-}
-textarea {
-  resize: vertical;
 }
 //forms
 
