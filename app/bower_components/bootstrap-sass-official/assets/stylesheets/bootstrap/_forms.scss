@@ -247,7 +247,8 @@ input[type="search"] {
 // Indent the labels to position radios/checkboxes as hanging controls.
 
 .radio,
-.checkbox {
+.checkbox,
+.text-checkbox {
   position: relative;
   display: block;
   margin-top: 10px;
@@ -255,7 +256,7 @@ input[type="search"] {
 
   label {
     min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 0;
     font-weight: normal;
     cursor: pointer;
@@ -354,7 +355,7 @@ input[type="checkbox"] {
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
 
 @include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $input-border-radius-small);
-.form-group-sm {
+.form-group-sm { 
 
   @include input-size('.form-control', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $input-border-radius-small);
 
@@ -521,7 +522,7 @@ input[type="checkbox"] {
       vertical-align: middle;
 
       label {
-        padding-left: 0;
+        /*padding-left: 0;*/
       }
     }
     .radio input[type="radio"],

@@ -22,8 +22,16 @@
 }
 
 // Prevent the focus on the dropdown toggle when closing dropdowns
-.dropdown-toggle:focus {
-  outline: 0;
+.dropdown-toggle {
+  img {
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  &:focus {
+    outline: 0;
+  }
 }
 
 // The dropdown menu (ul)
@@ -44,6 +52,7 @@
   border: 1px solid $dropdown-fallback-border; // IE8 fallback
   border: 1px solid $dropdown-border;
   border-radius: $border-radius-base;
+  min-width: 250px;
   @include box-shadow(0 6px 12px rgba(0,0,0,.175));
   background-clip: padding-box;
 
@@ -63,7 +72,7 @@
   // Links within the dropdown menu
   > li > a {
     display: block;
-    padding: 3px 20px;
+    padding: 8px 20px !important;
     clear: both;
     font-weight: normal;
     line-height: $line-height-base;

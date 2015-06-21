@@ -17,7 +17,7 @@ body {
 
 /* Custom page header */
 .page-header {
-  height: 83px;
+  height: 71px;
   margin: auto;
   border-bottom: 1px solid #e5e5e5;
     .navbar-brand {
@@ -33,8 +33,7 @@ body {
     }
   .navbar-nav {
     li {
-      padding: $padding-large-vertical * 3 $padding-xs-vertical;
-      line-height: $line-height-base;
+      line-height: $line-height-base * 3.5;
       transition-duration: 400ms;
       transition-property: all;
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -146,23 +145,128 @@ body {
 .checkbox {
   position: relative;
   margin-left: $padding-large-vertical / 2;
-  padding-left: $padding-large-vertical * 2.7;
 }
+  .input-md {
+    padding: 7px 11px;  
+  }
 .checkbox input[type=checkbox] {
   display: none;
 }
 .checkbox label:after {
-  font: normal normal normal 22px/2 FontAwesome;
+  font: normal normal normal 16px/1.6 FontAwesome;
   content: "\f096";
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
-  color: #fff;
 }
 .checkbox input[type=checkbox]:checked + label:after {
   content: "\f046";
 }
+
+.checkbox.light label:after {
+  color: #fff;
+}
+.checkbox.input-lg label:after {
+  font: normal normal normal 22px/2 FontAwesome;
+}
+.form-middle {
+  vertical-align: middle;
+}
 //forms
+
+//cabinet
+.page-sidebar {
+  background-color: #364150;
+  color: #B4BCC8;
+}
+//cabinet
+
+//dropdown
+.nav.pull-right > li > .dropdown-menu, .nav > li > .dropdown-menu.pull-right {
+  right: 0px;
+  left: auto;
+}
+//dropdown
+
+
+/***
+Custom Bootstrap Badges
+***/
+.badge.badge-roundless {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+.badge.badge-empty {
+  display: inline-block;
+  padding: 0;
+  min-width: 8px;
+  height: 8px;
+  width: 8px;
+}
+/* Badge variants */
+.badge-default {
+  background-color: $gray;
+  background-image: none;
+}
+
+.badge-primary {
+  background-color: $brand-primary;
+  background-image: none;
+}
+
+.badge-info {
+  background-color: $brand-info;
+  background-image: none;
+}
+
+.badge-success {
+  background-color: $brand-success;
+  background-image: none;
+}
+
+.badge-danger {
+  background-color: $brand-danger;
+  background-image: none;
+}
+
+.badge-warning {
+  background-color: $brand-warning;
+  background-image: none;
+}
+
+/* Fix badge position for navs */
+.nav.nav-pills > li > a > .badge,
+.nav.nav-stacked > li > a > .badge {
+  margin-top: -2px;
+}
+/***
+Dropdown Menu Badges
+***/
+.dropdown-menu > li > a > .badge {
+  position: absolute;
+  margin-top: 1px;
+  right: 10px;
+  display: inline;
+  font-size: 11px;
+  font-weight: 300;
+  text-shadow: none;
+  height: 18px;
+  padding: 3px 6px 3px 6px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-border-radius: 12px !important;
+  -moz-border-radius: 12px !important;
+  border-radius: 12px !important;
+}
+.dropdown-menu.badge-roundless {
+  -webkit-border-radius: border-radius-base !important;
+  -moz-border-radius: border-radius-base !important;
+  border-radius: border-radius-base !important;
+}
+/***
+Custom Bootstrap Badges
+***/
 
 
 /* Custom page footer */
@@ -177,25 +281,52 @@ body {
     color: $navbar-inverse-brand-color;
 
   }
-  .copyright-socials {
-    padding: 0;
-    margin-bottom: $padding-large-vertical * 4;
-    list-style: none;
-    li {
-      padding: 0 $padding-small-vertical - 2;
+}
+.copyright-socials {
+  padding: 0;
+  margin-bottom: $padding-large-vertical * 4;
+  list-style: none;
+  li {
+    padding: 0 $padding-small-vertical - 2;
+    display: inline-block;
+    i {
+      width: 43px;
+      height: 43px;
+      padding: $padding-large-vertical;
+      color: $navbar-inverse-brand-color;
+      font-size: $font-size-large;
+      background-color: $navbar-inverse-link-active-bg;
       display: inline-block;
-      i {
-        width: 43px;
-        height: 43px;
-        padding: $padding-large-vertical;
-        color: $navbar-inverse-brand-color;
-        font-size: $font-size-large;
-        background-color: $navbar-inverse-link-active-bg;
-        display: inline-block;
-        &:hover {
-          background: #303c47;
-          color: #fff;
-        }
+      &:hover {
+        background: #303c47;
+        color: #fff;
+      }
+    }
+  }
+}
+.authorized-socials {
+  padding: 0;
+  list-style: none;
+  li {
+    padding: 0 $padding-small-vertical - 2;
+    display: inline-block;
+    i {
+      width: 30px;
+      height: 30px;
+      padding: $padding-base-vertical;
+      color: #fff;
+      font-size: $font-size-h4;
+      display: inline-block;
+      text-align: center;
+      opacity: 0.7;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      &:hover {
+        opacity: 1.0;
+      }
+      &:first-child {
+        background-color: $brand-primary;
+        
       }
     }
   }
