@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 
         
     </head>
@@ -246,8 +247,51 @@
                     </ul>
                 </aside>
                 <main class="col-xs-9 margtopbot50">
-                     <div class="row">
-                        
+                    <div class="page-content">
+                        <div class="text-center col-xs-12">
+                            <ul class="list-unstyled list-inline">
+                                <li class="tags"><a href="#">Tags</a></li>
+                                <li class="tags"><a href="#">Forms</a></li>
+                                <li class="tags"><a href="#">PHP</a></li>
+                                <li class="tags"><a href="#">JavaScript</a></li>
+                                <li class="tags"><a href="#">UI</a></li>
+                                <li class="tags"><a href="#">Design</a></li>
+                                <li class="tags"><a href="#">Web</a></li>
+                                <li class="tags"><a href="#">Photoshop</a></li>
+                                <li class="tags"><a href="#">CorelDraw</a></li>
+                                <li class="tags"><a href="#">Illustrator</a></li>
+                                <li class="tags"><a href="#">InDesign</a></li>
+                                <li class="tags"><a href="#">Tags</a></li>
+                                <li class="tags"><a href="#">Forms</a></li>
+                                <li class="tags"><a href="#">PHP</a></li>
+                                <li class="tags"><a href="#">JavaScript</a></li>
+                                <li class="tags"><a href="#">UI</a></li>
+                                <li class="tags"><a href="#">Design</a></li>
+                                <li class="tags"><a href="#">Web</a></li>
+                                <li class="tags"><a href="#">Photoshop</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-2">
+                            <h3 class="page-title">
+                                Dashboard
+                            </h3>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="form-group has-info">
+                                <select class="form-control">
+                                    <option value="1">Плитка</option>
+                                    <option value="2">Список</option>
+                                </select>
+                                <label for="">&nbsp;</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <form class="form-inline">
+                                <input type="text" placeholder="Username" class="form-control">
+
+                                <button type="submit" class="btn-success btn animation">Поиск</button>
+                            </form>
+                        </div>
                     </div>
                 </main>
             </div>
@@ -285,6 +329,7 @@
         <!-- endbower -->
         <!-- endbuild -->
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
         <script src="scripts/app.js"></script>
 
     <script>
@@ -297,6 +342,9 @@
                 }, 1000);
                 event.preventDefault();
             });
+        });
+        $('select').select2({
+            minimumResultsForSearch: Infinity
         });
     </script>
 

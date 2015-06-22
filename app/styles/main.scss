@@ -179,6 +179,23 @@ body {
   background-color: #364150;
   color: #B4BCC8;
 }
+.tags {
+  margin: $padding-small-horizontal 0;
+  a {
+    padding: $padding-small-vertical $padding-small-horizontal + 5;
+    background: $brand-success;
+    border: 2px solid $brand-success;
+    font-size: 18px;
+    color: #FFF;
+    &:hover,
+    &:active,
+    &:focus {
+      background: #FFF;
+      color: $brand-success;
+      text-decoration: none;
+    }
+  }
+}
 //cabinet
 
 //dropdown
