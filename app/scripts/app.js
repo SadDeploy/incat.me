@@ -23,3 +23,11 @@ $('.cat__lines__header').click(function(){
     $(this).parent().find('.cat__lines__body').toggleClass('active');
     return false;
 });
+
+$(window).load(function() {
+    $('.flexslider').flexslider({
+        animation: "slide",
+        itemWidth: 258,
+        move: 1
+    });
+});

@@ -5,7 +5,8 @@
     "jquery": "~2.1.1",
     "bootstrap-sass-official": ">=3.3.0",
     "modernizr": "^2.8.3",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "flexslider": "~2.5.0"
   },
   "devDependencies": {
     "font-awesome": "~4.3.0"

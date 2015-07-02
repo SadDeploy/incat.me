@@ -1,0 +1,864 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>incat me</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bower_components/flexslider/flexslider.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/main.css">
+        
+    </head>
+    <body class="page-header-fixed page-quick-sidebar-over-content">
+
+        <!-- Header BEGIN -->
+        <header class="page-header">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                
+                <!--[if lt IE 10]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img class="logo-default" src="http://fakeimg.pl/150x50/2B3643/fff/?text=InCAT.me&font_size=35" alt="Logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Создать канал закладок</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown dropdown-user">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="username username-hide-on-mobile">Ник</span>
+                                <img class="img-circle" src="http://fakeimg.pl/30x30/fff/?text=ava/" alt="">
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default" aria-labelledby="dLabel">
+                                <li>
+                                    <a href="extra_profile.html">
+                                    <i class="fa fa-user"></i> My Profile </a>
+                                </li>
+                                <li>
+                                    <a href="page_calendar.html">
+                                    <i class=" fa fa-calendar"></i> My Calendar </a>
+                                </li>
+                                <li>
+                                    <a href="inbox.html">
+                                    <i class=" fa fa-envelope-o"></i> My Inbox <span class="badge badge-danger">
+                                    3 </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page_todo.html">
+                                    <i class=" fa fa-rocket"></i> My Tasks <span class="badge badge-success">
+                                    7 </span>
+                                    </a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="extra_lock.html">
+                                    <i class="fa fa-lock"></i> Lock Screen </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                    <i class="fa fa-key"></i> Log Out </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                         <a href="#" class="search"><i class="fa fa-sign-out fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Navbar Collapse -->
+            </nav>
+        </header>
+        <!-- Header END -->
+        <!-- BEGIN MAIN LAYOUT -->
+        <div class="page-content">
+            <!-- BEGIN ABOUT SECTION -->
+            <!-- main BEGIN -->
+            <div class="clearfix">
+                <div class="page-sidebar-wrapper">
+                    <aside class="page-sidebar collapse in pad0">
+                        <ul class="page-sidebar-menu page-sidebar-menu-open list-unstyled" id="accordion" role="tablist" aria-multiselectable="true">
+                            <li class="sidebar-toggler-wrapper clearfix">
+                                <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                                <div class="sidebar-toggler">
+                                    <button type="button" class="navbar-toggle show">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="toggle-icon">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <!-- END SIDEBAR TOGGLER BUTTON -->
+                            </li>
+                            <li class="start active open">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fa fa-home"></i>
+                                    <span class="title">Dashboard</span>
+                                    <span class="selected"></span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu list-unstyled collapse" id="collapseOne" role="tabpanel">
+                                    <li class="active">
+                                        <a href="index.html">
+                                        <i class="fa fa-bar-chart"></i>
+                                        Default Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="index_2.html">
+                                        <i class="fa fa-bulb"></i>
+                                        New Dashboard #1</a>
+                                    </li>
+                                    <li>
+                                        <a href="index_3.html">
+                                        <i class="fa fa-graph"></i>
+                                        New Dashboard #2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <i class="fa fa-folder"></i>
+                                    <span class="title">Multi Level Menu</span>
+                                    <span class="arrow "></span>
+                                </a>
+                                <ul class="sub-menu list-unstyled collapse" id="collapseTwo" role="tabpanel">
+                                    <li>
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            <i class="fa fa-settings"></i> Item 1 <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu list-unstyled collapse" id="collapseThree" role="tabpanel">
+                                            <li>
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                    <i class="fa fa-user"></i>
+                                                    Sample Link 1 <span class="arrow"></span>
+                                                </a>
+                                                <ul class="sub-menu list-unstyled collapse" id="collapseSix" role="tabpanel">
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-power"></i> Sample Link 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-paper-plane"></i> Sample Link 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-star"></i> Sample Link 1</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-camera"></i> Sample Link 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-link"></i> Sample Link 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pointer"></i> Sample Link 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            <i class="fa fa-globe"></i> Item 2 <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu list-unstyled collapse" id="collapseFour" role="tabpanel">
+                                            <li>
+                                                <a href="#"><i class="fa fa-tag"></i> Sample Link 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pencil"></i> Sample Link 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-graph"></i> Sample Link 1</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <i class="fa fa-bar-chart"></i>
+                                        Item 3 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    <i class="fa fa-user"></i>
+                                    <span class="title">Login Options</span>
+                                    <span class="arrow "></span>
+                                </a>
+                                <ul class="sub-menu list-unstyled collapse" id="collapseFive" role="tabpanel">
+                                    <li>
+                                        <a href="login.html">
+                                        Login Form 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="login_2.html">
+                                        Login Form 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="login_3.html">
+                                        Login Form 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="login_soft.html">
+                                        Login Form 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="extra_lock.html">
+                                        Lock Screen 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="extra_lock2.html">
+                                        Lock Screen 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <main class="page-content-wrapper">
+                    <div class="page-content">
+                        <div class="tags clearfix">
+                            <div class="text-center col-xs-12">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="tags"><a href="#">Tags</a></li>
+                                    <li class="tags"><a href="#">Forms</a></li>
+                                    <li class="tags"><a href="#">PHP</a></li>
+                                    <li class="tags"><a href="#">JavaScript</a></li>
+                                    <li class="tags"><a href="#">UI</a></li>
+                                    <li class="tags"><a href="#">Design</a></li>
+                                    <li class="tags"><a href="#">Web</a></li>
+                                    <li class="tags"><a href="#">Photoshop</a></li>
+                                    <li class="tags"><a href="#">CorelDraw</a></li>
+                                    <li class="tags"><a href="#">Illustrator</a></li>
+                                    <li class="tags"><a href="#">InDesign</a></li>
+                                    <li class="tags"><a href="#">Tags</a></li>
+                                    <li class="tags"><a href="#">Forms</a></li>
+                                    <li class="tags"><a href="#">PHP</a></li>
+                                    <li class="tags"><a href="#">JavaScript</a></li>
+                                    <li class="tags"><a href="#">UI</a></li>
+                                    <li class="tags"><a href="#">Design</a></li>
+                                    <li class="tags"><a href="#">Web</a></li>
+                                    <li class="tags"><a href="#">Photoshop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sort clearfix">
+                            <div class="col-xs-2">
+                                <h3 class="page-title margtopbot0">
+                                    Dashboard
+                                </h3>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="form-group has-info">
+                                    <select class="form-control">
+                                        <option value="1">Плитка</option>
+                                        <option value="2">Список</option>
+                                    </select>
+                                    <label for="">&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 text-right pull-right">
+                               <a href="#"><i class="fa fa-search fa-2x"></i></a>
+                               <a href="#"><i class="fa fa-film fa-2x"></i></a>
+                            </div>
+                            <div class="col-xs-5 pull-right">
+                                <form action="" method="post" class="has-feedback">
+                                    <input type="text" placeholder="Поиск" class="form-control">
+                                    <label for="">&nbsp;</label>
+                                    <button type="submit" class="btn btn-primary btn-md btn-search">Поиск</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <strong>Warning!</strong> Best check yo self, you're not looking too good.
+                        </div>
+                        <div class="alert alert-success alert-dismissible fade in" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <strong>Success!</strong> Best check yo self, you're not looking too good.
+                        </div>
+                        <div class="clearfix">
+
+                        <!-- Nav tabs -->
+                        <ul class="list-inline" role="tablist">
+                            <li role="presentation" class="active"><a href="#cat" aria-controls="home" role="tab" data-toggle="tab" class="btn btn-default">Мои закладки</a></li>
+                            <li role="presentation"><a href="#trends" aria-controls="profile" role="tab" data-toggle="tab" class="btn btn-default">Тренды</a></li>
+                            <li role="presentation"><a href="#recommended" aria-controls="messages" role="tab" data-toggle="tab" class="btn btn-default">Рекомендуемые</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="cat">
+                                <div class="panel panel-danger">
+                                  <div class="panel-body">
+                                    <div class="clearfix">
+                                        <h3 class="col-xs-2 margtopbot0">Мои закладки</h3>
+                                        <div  class="col-xs-2">
+                                            <div class="form-group has-info">
+                                                <select class="form-control">
+                                                    <option value="1">Неделя</option>
+                                                    <option value="2">День</option>
+                                                    <option value="2">Месяц</option>
+                                                    <option value="2">Год</option>
+                                                </select>
+                                                <label for="">&nbsp;</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margtopbot20 col-xs-12 clearfix">
+                                        <div class="flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-info">
+                                  <div class="panel-body">
+                                    <div class="clearfix">
+                                        <h3 class="col-xs-2 margtopbot0">История</h3>
+                                        <div  class="col-xs-2">
+                                            <div class="form-group has-info">
+                                                <select class="form-control">
+                                                    <option value="1">Неделя</option>
+                                                    <option value="2">День</option>
+                                                    <option value="2">Месяц</option>
+                                                    <option value="2">Год</option>
+                                                </select>
+                                                <label for="">&nbsp;</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margtopbot20 col-xs-12 clearfix">
+                                        <div class="flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-primary">
+                                  <div class="panel-body">
+                                    <div class="clearfix">
+                                        <h3 class="col-xs-2 margtopbot0">Тренды</h3>
+                                        <div  class="col-xs-2">
+                                            <div class="form-group has-info">
+                                                <select class="form-control">
+                                                    <option value="1">Неделя</option>
+                                                    <option value="2">День</option>
+                                                    <option value="2">Месяц</option>
+                                                    <option value="2">Год</option>
+                                                </select>
+                                                <label for="">&nbsp;</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margtopbot20 col-xs-12 clearfix">
+                                        <div class="flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                                <li>
+                                                    <img src="http://fakeimg.pl/150x150" alt="" class="img-responsive"/>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="trends">
+
+                                <div class="col-xs-6">
+                                    <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="clearfix">
+                                            <h3 class="col-xs-8 margtopbot0">Тренды</h3>
+                                            <div  class="col-xs-2 pull-right">
+                                                <div class="form-group has-info">
+                                                    <select class="form-control">
+                                                        <option value="1">Неделя</option>
+                                                        <option value="2">День</option>
+                                                        <option value="2">Месяц</option>
+                                                        <option value="2">Год</option>
+                                                    </select>
+                                                    <label for="">&nbsp;</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="margtopbot20 clearfix">
+                                            <table class="my_links table table-responsive">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-thumbs-o-up fa-lg"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-thumbs-o-up fa-lg"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-thumbs-o-up fa-lg"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-thumbs-o-up fa-lg"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-thumbs-o-up fa-lg"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-thumbs-o-up fa-lg"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                 </div>
+                                </div>
+                                <div class="col-xs-6">
+                                 <div class="panel panel-default ">
+                                    <div class="panel-body">
+                                        <div class="clearfix">
+                                            <h3 class="col-xs-8 margtopbot0">Подписка на другие каналы</h3>
+                                            <div  class="col-xs-2 pull-right">
+                                                <div class="form-group has-info">
+                                                    <select class="form-control">
+                                                        <option value="1">Неделя</option>
+                                                        <option value="2">День</option>
+                                                        <option value="2">Месяц</option>
+                                                        <option value="2">Год</option>
+                                                    </select>
+                                                    <label for="">&nbsp;</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="margtopbot20 clearfix">
+                                            <table class="my_links table table-responsive">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                 </div>
+                                </div>
+                                <div class="col-xs-6">
+                                 <div class="panel panel-default ">
+                                    <div class="panel-body">
+                                        <div class="clearfix">
+                                            <h3 class="col-xs-8 margtopbot0">Рекомендуемые</h3>
+                                            <div  class="col-xs-2 pull-right">
+                                                <div class="form-group has-info">
+                                                    <select class="form-control">
+                                                        <option value="1">Неделя</option>
+                                                        <option value="2">День</option>
+                                                        <option value="2">Месяц</option>
+                                                        <option value="2">Год</option>
+                                                    </select>
+                                                    <label for="">&nbsp;</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="margtopbot20 clearfix">
+                                            <table class="my_links table table-responsive">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                 </div>
+                                </div>
+                                <div class="col-xs-6">
+                                 <div class="panel panel-default ">
+                                    <div class="panel-body">
+                                        <div class="clearfix">
+                                            <h3 class="col-xs-8 margtopbot0">Тренды</h3>
+                                            <div  class="col-xs-2 pull-right">
+                                                <div class="form-group has-info">
+                                                    <select class="form-control">
+                                                        <option value="1">Неделя</option>
+                                                        <option value="2">День</option>
+                                                        <option value="2">Месяц</option>
+                                                        <option value="2">Год</option>
+                                                    </select>
+                                                    <label for="">&nbsp;</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="margtopbot20 clearfix">
+                                            <table class="my_links table table-responsive">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center relative">
+                                                            <a href="#" class=""><i class="fa fa-globe fa-lg"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                                adipisicing elit. Inventore, laudantium!</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                 </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="recommended">
+                                2
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <!-- main END -->
+            <!-- END ABOUT SECTION -->
+
+            <!-- Footer -->
+            <footer>
+                <!-- Footer Coypright -->
+                <div class="footer-copyright navbar-inverse">
+                    <div class="container">
+                        <ul class="copyright-socials">
+                            <li><a href="#"><i class="fa fa-twitter animation"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook animation"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk animation"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest animation"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin animation"></i></a></li>
+                        </ul>
+                        <P>Designed with love by LoftBlog Team</P>
+                    </div>
+                </div>
+                <!-- End Footer Coypright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+        <!-- END MAIN LAYOUT -->
+        <a href="#intro" class="scroll-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+        <script src="bower_components/flexslider/jquery.flexslider-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+        <script src="scripts/app.js"></script>
+
+
+    </body>
+</html>

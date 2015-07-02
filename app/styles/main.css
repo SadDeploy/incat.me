@@ -5102,8 +5102,9 @@ body {
   .cat__lines__body.active {
     display: block;
     position: absolute;
-    top: px;
-    left: -2.6%;
+    top: 47px;
+    left: 0;
+    right: 0;
     z-index: 3; }
   .cat__lines__body:before, .cat__lines__body:after {
     bottom: 100%;
@@ -5125,8 +5126,34 @@ body {
     border-width: 11px;
     margin-left: -11px; }
 
+.details__book {
+  position: relative;
+  cursor: pointer; }
+
+.details__book-block {
+  opacity: 0;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  background-color: #447eb0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .details__book-block a {
+    color: #fff; }
+
+.details__book:hover .details__book-block {
+  opacity: 0.9; }
+
 .nav.pull-right > li > .dropdown-menu, .nav > li > .dropdown-menu.pull-right {
-  right: 0px;
+  right: 0;
   left: auto; }
 
 /***
@@ -5300,8 +5327,8 @@ Custom Bootstrap Badges
 /* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
   .navbar-nav li a {
-    padding-top: 0px;
-    padding-bottom: 0px; } }
+    padding-top: 0;
+    padding-bottom: 0; } }
 .select2-container .select2-selection--single {
   height: 34px; }
 
@@ -5314,5 +5341,11 @@ Custom Bootstrap Badges
 .select2-container--default .select2-selection--single {
   -webkit-border-radius: 0;
   border-radius: 0; }
+
+.flexslider .slides > li {
+  margin-right: 5px; }
+
+.flex-direction-nav a:before {
+  font-size: 35px; }
 
 /*# sourceMappingURL=main.css.map */

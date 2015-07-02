@@ -360,8 +360,9 @@ body {
   &.active {
     display: block;
     position: absolute;
-    top: 60px;
-    left: -2.6%;
+    top: 47px;
+    left: 0;
+    right: 0;
     z-index: 3;
   }
   &:before,
@@ -388,11 +389,37 @@ body {
     margin-left: -11px;
   }
 }
+.details__book {
+  position: relative;
+  cursor: pointer;
+}
+  .details__book-block {
+    opacity: 0;
+    cursor: pointer;
+    color: #fff;
+    padding: $padding-large-vertical;
+    background-color: $brand-primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    a {color: #fff;}
+  }
+.details__book:hover .details__book-block {
+  opacity: 0.9;
+}
 //cabinet
 
 //dropdown
 .nav.pull-right > li > .dropdown-menu, .nav > li > .dropdown-menu.pull-right {
-  right: 0px;
+  right: 0;
   left: auto;
 }
 //dropdown
@@ -594,8 +621,8 @@ Custom Bootstrap Badges
   .navbar-nav {
     li {
       a {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
   }
@@ -614,3 +641,7 @@ Custom Bootstrap Badges
   -webkit-border-radius: 0;
           border-radius: 0;
 }
+
+//plugin
+.flexslider .slides > li {margin-right: 5px;}
+.flex-direction-nav a:before {font-size: 35px;}

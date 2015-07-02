@@ -11,6 +11,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bower_components/flexslider/flexslider.css">
         <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="styles/main.css">
         
@@ -124,7 +125,7 @@
                                 <!-- END SIDEBAR TOGGLER BUTTON -->
                             </li>
                             <li class="start active open">
-                                <a >
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     <i class="fa fa-home"></i>
                                     <span class="title">Dashboard</span>
                                     <span class="selected"></span>
@@ -334,65 +335,258 @@
                                         </div>
                                     </div>
                                     <div class="margtopbot20 col-xs-12 clearfix">
-                                        <div class="col-xs-12 my_links ">
-                                            <div class="row margtopbot20">
-                                                <a href="#" class="cat__lines__header"><i class="fa fa-file-text-o fa-2x"></i></a>
-                                                <ul class="cat__lines__body list-unstyled">
-                                                    <li>
-                                                        <a href="#" class="text-success"><i class="fa fa-file-word-o fa-lg"></i></a></li>
-                                                    <li><a href="#" class="text-success"><i class="fa fa-pencil fa-lg"></i></a></li>
-                                                    <li><a href="#" class="text-success"><i class="fa fa-trash fa-lg"></i></a>
-                                                    </li>
-                                                </ul>
-                                                <a href="#" class="margleftright10 fa-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laudantium!</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 my_links ">
-                                            <div class="row margtopbot20">
-                                                <a href="#" class="cat__lines__header"><i class="fa fa-cab fa-2x"></i></a>
-                                                <ul class="cat__lines__body list-unstyled">
-                                                    <li>
-                                                        <a href="#" class="text-danger"><i class="fa fa-file-word-o fa-lg"></i></a></li>
-                                                        <li><a href="#" class="text-danger"><i class="fa fa-pencil fa-lg"></i></a></li>
-                                                        <li><a href="#" class="text-danger"><i class="fa fa-trash fa-lg"></i></a>
-                                                    </li>
-                                                </ul>
-                                                <a href="#" class="margleftright10 fa-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laudantium!</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 my_links ">
-                                            <div class="row margtopbot20">
-                                                <a href="#" class="cat__lines__header"><i class="fa fa-video-camera fa-2x"></i></a>
-                                                <ul class="cat__lines__body list-unstyled">
-                                                    <li>
-                                                        <a href="#" class="text-warning"><i class="fa fa-file-word-o fa-lg"></i></a></li>
-                                                    <li><a href="#" class="text-warning"><i class="fa fa-pencil fa-lg"></i></a></li>
-                                                    <li><a href="#" class="text-warning"><i class="fa fa-trash fa-lg"></i></a>
-                                                    </li>
-                                                </ul>
-                                                <a href="#" class="margleftright10 fa-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laudantium!</a>
-                                            </div>
-                                        </div>
+                                        <table class="my_links table table-responsive fa-lg">
+                                            <tbody>
+                                            <tr>
+                                                <td class="text-center relative">
+                                                    <a href="#" class="cat__lines__header"><i class="fa fa-file-text-o fa-lg"></i></a>
+                                                    <ul class="cat__lines__body list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="text-success"><i class="fa fa-file-word-o"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-pencil"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-trash"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Inventore, laudantium!</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center relative">
+                                                    <a href="#" class="cat__lines__header"><i class="fa fa-file-text-o fa-lg"></i></a>
+                                                    <ul class="cat__lines__body list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="text-success"><i class="fa fa-file-word-o"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-pencil"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-trash"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Inventore, laudantium!</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center relative">
+                                                    <a href="#" class="cat__lines__header"><i class="fa fa-file-text-o fa-lg"></i></a>
+                                                    <ul class="cat__lines__body list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="text-success"><i class="fa fa-file-word-o"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-pencil"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-trash"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Inventore, laudantium!</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center relative">
+                                                    <a href="#" class="cat__lines__header"><i class="fa fa-file-text-o fa-lg"></i></a>
+                                                    <ul class="cat__lines__body list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="text-success"><i class="fa fa-file-word-o"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-pencil"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-trash"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Inventore, laudantium!</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center relative">
+                                                    <a href="#" class="cat__lines__header"><i class="fa fa-file-text-o fa-lg"></i></a>
+                                                    <ul class="cat__lines__body list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="text-success"><i class="fa fa-file-word-o"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-pencil"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-trash"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Inventore, laudantium!</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center relative">
+                                                    <a href="#" class="cat__lines__header"><i class="fa fa-file-text-o fa-lg"></i></a>
+                                                    <ul class="cat__lines__body list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="text-success"><i class="fa fa-file-word-o"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-pencil"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-trash"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Inventore, laudantium!</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center relative">
+                                                    <a href="#" class="cat__lines__header"><i class="fa fa-file-text-o fa-lg"></i></a>
+                                                    <ul class="cat__lines__body list-unstyled fa-lg">
+                                                        <li>
+                                                            <a href="#" class="text-success"><i class="fa fa-file-word-o"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-pencil"></i></a></li>
+                                                        <li><a href="#" class="text-success"><i class="fa fa-trash"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="margleftright10">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Inventore, laudantium!</a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                            <tfoot>
+                                            <tr>
+                                                <td colspan="2" class="text-right">Всего ресурсов: <b>122</b></td>
+                                            </tr>
+                                            </tfoot>
+                                        </table>
+
                                     </div>
                                   </div>
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="trends">
                                 <div class="panel panel-default">
-                                  <div class="panel-body">
-                                    <div class="clearfix">
-                                        <h3 class="col-xs-2 margtopbot0">Тренды</h3>
-                                        <div  class="col-xs-2">
-                                            <div class="form-group has-info">
-                                                <select class="form-control">
-                                                    <option value="1">Плитка</option>
-                                                    <option value="2">Список</option>
-                                                </select>
-                                                <label for="">&nbsp;</label>
+                                    <div class="panel-body">
+                                        <div class="clearfix">
+                                            <h3 class="col-xs-2 margtopbot0">Тренды</h3>
+                                            <div  class="col-xs-2">
+                                                <div class="form-group has-info">
+                                                    <select class="form-control">
+                                                        <option value="1">Неделя</option>
+                                                        <option value="2">День</option>
+                                                    </select>
+                                                    <label for="">&nbsp;</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row clearfix">
+                                            <div class="col-xs-2">
+                                                <div class="details__book">
+                                                    <img src="http://fakeimg.pl/320x320" class="img-responsive" alt=""/>
+                                                    <div class="details__book-block text-center">
+                                                        <h4>Заголовок</h4>
+
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum cupiditate
+                                                            dicta dolorem, dolorum eos laborum magnam modi numquam, optio perspiciatis quae,
+                                                            quibusdam quis recusandae.</p>
+                                                        <ul class="list-unstyled list-inline">
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <div class="details__book">
+                                                    <img src="http://fakeimg.pl/320x320" class="img-responsive" alt=""/>
+                                                    <div class="details__book-block text-center">
+                                                        <h4>Заголовок</h4>
+
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci animi autem
+                                                            earum, facere necessitatibus nesciunt quaerat, quasi ratione saepe soluta tenetur
+                                                            ullam voluptates voluptatum!</p>
+                                                        <ul class="list-unstyled list-inline">
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <div class="details__book">
+                                                    <img src="http://fakeimg.pl/320x320" class="img-responsive" alt=""/>
+                                                    <div class="details__book-block text-center">
+                                                        <h4>Заголовок</h4>
+
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid
+                                                            assumenda dolore dolores eos eveniet libero maiores, maxime, non nostrum numquam
+                                                            quasi quod, temporibus velit?</p>
+                                                        <ul class="list-unstyled list-inline">
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <div class="details__book">
+                                                    <img src="http://fakeimg.pl/320x320" class="img-responsive" alt=""/>
+                                                    <div class="details__book-block text-center">
+                                                        <h4>Заголовок</h4>
+
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut cum cumque
+                                                            dolores eaque esse harum id magni minima minus placeat, quasi, sint tempora.
+                                                            Culpa!</p>
+                                                        <ul class="list-unstyled list-inline">
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <div class="details__book">
+                                                    <img src="http://fakeimg.pl/320x320" class="img-responsive" alt=""/>
+                                                    <div class="details__book-block text-center">
+                                                        <h4>Заголовок</h4>
+
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloribus eaque officia
+                                                            quidem quisquam quod sequi? Corporis ex expedita hic illo mollitia perspiciatis qui
+                                                            tenetur?</p>
+                                                        <ul class="list-unstyled list-inline">
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <div class="details__book">
+                                                    <img src="http://fakeimg.pl/320x320" class="img-responsive" alt=""/>
+                                                    <div class="details__book-block text-center">
+                                                        <h4>Заголовок</h4>
+
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto, consequatur
+                                                            cum dicta dolores incidunt non omnis quasi sit tenetur unde ut veniam veritatis
+                                                            voluptatem!</p>
+                                                        <ul class="list-unstyled list-inline">
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                  </div>
                                 </div>
 
                             </div>
@@ -411,6 +605,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                      <div class="col-xs-12 clearfix">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quis.</p>
+                                      </div>
                                   </div>
                                 </div>
                                 
@@ -455,6 +652,7 @@
         <!-- endbower -->
         <!-- endbuild -->
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+        <script src="bower_components/flexslider/jquery.flexslider-min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
         <script src="scripts/app.js"></script>
 
